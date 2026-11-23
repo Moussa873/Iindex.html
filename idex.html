@@ -255,417 +255,6 @@
         opacity: 0.9;
         font-size: 14px;
       }
-      .ucx {
-        --ucbg: #f3f4f6;
-        display: grid;
-        grid-template-columns: 260px 1fr;
-        align-items: stretch;
-        background: var(--ucbg);
-        border: 1px solid var(--bd);
-        border-radius: 6px;
-        overflow: hidden;
-        font:
-          14px/1.45 "Segoe UI",
-          "Open Sans",
-          Roboto,
-          Helvetica,
-          Arial,
-          sans-serif;
-        color: var(--tx);
-      }
-      @media (prefers-color-scheme: dark) {
-        :root:not([data-theme="light"]) .ucx {
-          --ucbg: #12161d;
-        }
-      }
-      :root[data-theme="dark"] .ucx {
-        --ucbg: #12161d;
-      }
-      .ucx h2 {
-        font: inherit;
-        font-size: 18px;
-      }
-      .sb {
-        background: var(--sf);
-        border-right: 1px solid var(--bd);
-        padding: 22px 0;
-      }
-      .sb .av {
-        width: 76px;
-        height: 76px;
-        border-radius: 50%;
-        margin: 0 auto 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 28px;
-        color: #fff;
-        background: linear-gradient(135deg, #1f4e8c, #4aaed6);
-      }
-      .sb .nm {
-        text-align: center;
-        font-size: 16px;
-        line-height: 1.3;
-        padding: 0 10px 22px;
-        border-bottom: 1px solid var(--bd);
-        margin-bottom: 14px;
-      }
-      .sb .nm .mu {
-        font-size: 12px;
-        margin-top: 4px;
-      }
-      .sb button {
-        display: flex;
-        width: 100%;
-        gap: 18px;
-        align-items: center;
-        text-align: left;
-        background: none;
-        border: 0;
-        border-radius: 0;
-        padding: 15px 20px 15px 62px;
-        font-size: 14px;
-        color: var(--tx);
-      }
-      .sb button svg {
-        width: 17px;
-        height: 17px;
-        flex: 0 0 17px;
-        fill: none;
-        stroke: currentColor;
-        stroke-width: 2;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        color: #8a8f98;
-      }
-      .sb button.on,
-      .sb button.on svg {
-        color: #4aaed6;
-      }
-      .sb button:hover {
-        background: rgba(74, 174, 214, 0.07);
-      }
-      .mn {
-        padding: 20px 24px;
-        min-width: 0;
-      }
-      .topb {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 18px;
-        max-width: 760px;
-      }
-      .sr {
-        position: relative;
-        flex: 1;
-        max-width: 532px;
-      }
-      .sr input {
-        margin: 0;
-        border: 0;
-        border-radius: 4px;
-        padding: 11px 40px 11px 18px;
-        background: var(--sf);
-        font-size: 14px;
-      }
-      .sr svg {
-        position: absolute;
-        right: 14px;
-        top: 50%;
-        margin-top: -8px;
-        width: 16px;
-        height: 16px;
-        fill: none;
-        stroke: #9aa0a8;
-        stroke-width: 2;
-        stroke-linecap: round;
-      }
-      .topb .ic {
-        display: flex;
-        gap: 6px;
-      }
-      .topb .ic button {
-        background: none;
-        border: 0;
-        padding: 6px;
-        color: #9aa0a8;
-        border-radius: 50%;
-        line-height: 0;
-      }
-      .topb .ic svg {
-        width: 20px;
-        height: 20px;
-        fill: none;
-        stroke: currentColor;
-        stroke-width: 2;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-      .ucx .card {
-        padding: 0;
-        border-radius: 4px;
-        overflow: hidden;
-        max-width: 760px;
-        margin-bottom: 16px;
-      }
-      .ucx .eh {
-        background: #7ecbe6;
-        color: #fff;
-        padding: 20px 40px;
-        margin: 0;
-        border-radius: 0;
-        font-size: 21px;
-        font-weight: 300;
-      }
-      .cb {
-        padding: 18px 40px;
-      }
-      .ev {
-        display: flex;
-        gap: 20px;
-        padding: 26px 40px;
-        border-bottom: 1px solid var(--bd);
-        align-items: flex-start;
-      }
-      .ev:last-child {
-        border-bottom: 0;
-      }
-      .ev .ea {
-        flex: 0 0 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: linear-gradient(135deg, #1f4e8c, #4aaed6);
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
-        font-size: 16px;
-      }
-      .ev .g {
-        color: var(--mu);
-      }
-      .ev .tm {
-        margin-top: 10px;
-        font-size: 12px;
-        color: var(--mu);
-        display: flex;
-        gap: 6px;
-        align-items: center;
-      }
-      .pfr {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        padding: 10px 0;
-        border-bottom: 1px solid var(--bd);
-      }
-      .ucx .stat {
-        padding: 8px;
-      }
-      .ucx textarea {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid var(--bd);
-        border-radius: 8px;
-        background: var(--bg);
-        font: inherit;
-        color: var(--tx);
-        margin: 4px 0 10px;
-      }
-      .cal {
-        table-layout: fixed;
-        text-align: center;
-      }
-      .cal th,
-      .cal td {
-        text-align: center;
-        padding: 2px;
-        border: 0;
-      }
-      .cal button {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 0;
-        background: none;
-        position: relative;
-      }
-      .cal .td {
-        background: #4aaed6;
-        color: #fff;
-      }
-      .cal .sel {
-        outline: 2px solid #4aaed6;
-      }
-      .cal .dt::after {
-        content: "";
-        position: absolute;
-        bottom: 4px;
-        left: 50%;
-        margin-left: -2px;
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background: var(--rd);
-      }
-      .dot {
-        position: absolute;
-        right: -1px;
-        bottom: -1px;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: #b8bcc4;
-        border: 2px solid var(--sf);
-      }
-      .dot.on {
-        background: #2fb344;
-      }
-      .thd {
-        max-height: 260px;
-        overflow: auto;
-        padding: 8px;
-        border: 1px solid var(--bd);
-        border-radius: 8px;
-        margin: 8px 0;
-        background: var(--bg);
-      }
-      .bb {
-        max-width: 78%;
-        padding: 7px 11px;
-        border-radius: 12px;
-        margin: 4px 0;
-        background: var(--sf);
-        border: 1px solid var(--bd);
-      }
-      .bb.out {
-        margin-left: auto;
-        background: #4aaed6;
-        color: #fff;
-        border-color: #4aaed6;
-      }
-      .bb small {
-        display: block;
-        opacity: 0.7;
-        font-size: 11px;
-      }
-      .bdg {
-        margin-left: auto;
-        background: #d94b4b;
-        color: #fff;
-        border-radius: 10px;
-        padding: 0 7px;
-        font-size: 11px;
-        line-height: 18px;
-      }
-      #toast {
-        position: fixed;
-        left: 50%;
-        bottom: 24px;
-        transform: translateX(-50%) translateY(20px);
-        background: #222;
-        color: #fff;
-        padding: 10px 16px;
-        border-radius: 8px;
-        opacity: 0;
-        pointer-events: none;
-        transition: 0.25s;
-        z-index: 50;
-        max-width: 90%;
-      }
-      #toast.show {
-        opacity: 1;
-        transform: translateX(-50%);
-      }
-      .pfe {
-        border: 1px solid var(--bd);
-        border-radius: 8px;
-        padding: 12px;
-        margin: 8px 0;
-      }
-      .pfe a {
-        word-break: break-all;
-      }
-      .chips {
-        margin: 10px 0;
-      }
-      .chips button {
-        margin: 2px 4px 2px 0;
-        padding: 5px 10px;
-        font-size: 13px;
-      }
-      .chips button.on {
-        background: #4aaed6;
-        color: #fff;
-        border-color: #4aaed6;
-      }
-      @media print {
-        .pfe .np,
-        .chips {
-          display: none;
-        }
-      }
-      .att {
-        border: 1px solid var(--bd);
-        border-radius: 6px;
-        padding: 16px;
-        margin-bottom: 12px;
-      }
-      @media (max-width: 760px) {
-        .ucx {
-          grid-template-columns: 1fr;
-        }
-        .sb {
-          display: flex;
-          flex-wrap: wrap;
-          padding: 12px;
-          border-right: 0;
-          border-bottom: 1px solid var(--bd);
-        }
-        .sb .av {
-          margin: 0 12px 0 0;
-          width: 56px;
-          height: 56px;
-          font-size: 20px;
-        }
-        .sb .nm {
-          flex: 1;
-          text-align: left;
-          border: 0;
-          margin: 0;
-          padding: 0;
-          align-self: center;
-        }
-        .sb button {
-          width: auto;
-          padding: 10px 12px;
-          gap: 8px;
-          font-size: 13px;
-        }
-        .mn {
-          padding: 14px 10px;
-        }
-        .cb,
-        .ev {
-          padding-left: 16px;
-          padding-right: 16px;
-        }
-        .ucx .eh {
-          padding: 16px;
-        }
-      }
-      @media print {
-        .sb,
-        .topb {
-          display: none;
-        }
-        .ucx {
-          display: block;
-          border: 0;
-        }
-      }
       @media print {
         nav,
         header button,
@@ -733,8 +322,8 @@
           c: "IMT",
           fr: "Faculté des technologies de l’information",
           ru: "Факультет информационных технологий",
-          gr: ["Группа 1", "Группа 2", "Группа 3"],
-          f: ["Программная инженерия", "Информационные системы"],
+          gr: ["Groupe 1", "Groupe 2", "Groupe 3"],
+          f: ["Génie logiciel", "Systèmes d’information"],
           m: [
             ["Langue étrangère", "Иностранный язык", "za"],
             ["Mathématiques analyse", "Математический анализ", "ex"],
@@ -745,6 +334,7 @@
             ["Communication commerciale", "Деловые коммуникации", "za"],
             ["Gestion de projet", "Управление проектами", "za"],
             ["Programmation orientée objet", "ООП", "ex"],
+            ["Bases de données", "Базы данных", "za"],
           ],
         },
         imm: {
@@ -752,7 +342,7 @@
           c: "IMM",
           fr: "Mathématiques",
           ru: "Математика",
-          f: ["Фундаментальная математика", "Прикладная математика"],
+          f: ["Mathématiques fondamentales", "Mathématiques appliquées"],
           m: [
             ["Algèbre linéaire", "Линейная алгебра", "ex"],
             ["Analyse réelle", "Вещественный анализ", "ex"],
@@ -766,7 +356,7 @@
           c: "IMP",
           fr: "Physique",
           ru: "Физика",
-          f: ["Общая физика", "Прикладная физика"],
+          f: ["Physique générale", "Physique appliquée"],
           m: [
             ["Physique générale", "Общая физика", "ex"],
             ["Mécanique", "Механика", "ex"],
@@ -780,7 +370,7 @@
           c: "SOC",
           fr: "Sociologie",
           ru: "Социология",
-          f: ["Общая социология", "Социология развития"],
+          f: ["Sociologie générale", "Sociologie du développement"],
           m: [
             ["Sociologie générale", "Общая социология", "ex"],
             ["Méthodes d’enquête", "Методы опроса", "ex"],
@@ -794,7 +384,7 @@
           c: "PSY",
           fr: "Psychologie",
           ru: "Психология",
-          f: ["Клиническая психология", "Социальная психология"],
+          f: ["Psychologie clinique", "Psychologie sociale"],
           m: [
             ["Psychologie générale", "Общая психология", "ex"],
             ["Psychologie du développement", "Возрастная психология", "ex"],
@@ -808,7 +398,7 @@
           c: "POL",
           fr: "Sciences politiques",
           ru: "Политология",
-          f: ["Международные отношения", "Государственное управление"],
+          f: ["Relations internationales", "Administration publique"],
           m: [
             ["Théorie politique", "Политическая теория", "ex"],
             ["Relations internationales", "Международные отношения", "ex"],
@@ -822,7 +412,7 @@
           c: "TRA",
           fr: "Travail social",
           ru: "Социальная работа",
-          f: ["Социальная работа", "Работа с сообществами"],
+          f: ["Travail social", "Action communautaire"],
           m: [
             ["Introduction au travail social", "Введение в социальную работу", "za"],
             ["Politiques sociales", "Социальная политика", "ex"],
@@ -836,7 +426,7 @@
           c: "ECO",
           fr: "Économie & Gestion",
           ru: "Экономика и управление",
-          f: ["Экономика", "Менеджмент"],
+          f: ["Économie", "Management"],
           m: [
             ["Microéconomie", "Микроэкономика", "ex"],
             ["Macroéconomie", "Макроэкономика", "ex"],
@@ -851,7 +441,7 @@
           c: "DRO",
           fr: "Droit",
           ru: "Право",
-          f: ["Частное право", "Публичное право"],
+          f: ["Droit privé", "Droit public"],
           m: [
             ["Théorie générale du droit", "Теория государства и права", "ex"],
             ["Droit civil", "Гражданское право", "ex"],
@@ -866,7 +456,7 @@
           c: "LNG",
           fr: "Langues & Philologie",
           ru: "Филология",
-          f: ["Русский язык", "Лингвистика"],
+          f: ["Langue russe", "Linguistique"],
           m: [
             ["Langue russe", "Русский язык", "ex"],
             ["Littérature russe", "Русская литература", "ex"],
@@ -880,7 +470,7 @@
           c: "MED",
           fr: "Médecine générale",
           ru: "Лечебное дело",
-          f: ["Лечебное дело", "Хирургия", "Внутренние болезни"],
+          f: ["Médecine générale", "Chirurgie", "Médecine interne"],
           m: [
             ["Anatomie humaine", "Анатомия человека", "ex"],
             ["Physiologie normale", "Нормальная физиология", "ex"],
@@ -898,7 +488,7 @@
           c: "PED",
           fr: "Pédiatrie",
           ru: "Педиатрия",
-          f: ["Общая педиатрия", "Неонатология"],
+          f: ["Pédiatrie générale", "Néonatologie"],
           m: [
             ["Croissance et développement de l’enfant", "Рост и развитие ребёнка", "ex"],
             ["Pédiatrie générale", "Детские болезни", "ex"],
@@ -913,7 +503,7 @@
           c: "STO",
           fr: "Stomatologie",
           ru: "Стоматология",
-          f: ["Хирургическая стоматология", "Ортодонтия"],
+          f: ["Chirurgie dentaire", "Orthodontie"],
           m: [
             ["Anatomie dentaire", "Анатомия зубов", "ex"],
             ["Odontologie conservatrice", "Терапевтическая стоматология", "ex"],
@@ -928,7 +518,7 @@
           c: "PHA",
           fr: "Pharmacie",
           ru: "Фармация",
-          f: ["Клиническая фармация", "Фармацевтическая технология"],
+          f: ["Pharmacie clinique", "Technologie pharmaceutique"],
           m: [
             ["Chimie pharmaceutique", "Фармацевтическая химия", "ex"],
             ["Pharmacologie", "Фармакология", "ex"],
@@ -944,7 +534,7 @@
           c: "GEL",
           fr: "Géologie",
           ru: "Геология",
-          f: ["Общая геология", "Гидрогеология", "Горная геология"],
+          f: ["Géologie générale", "Hydrogéologie", "Géologie minière"],
           m: [
             ["Géologie générale", "Общая геология", "ex"],
             ["Minéralogie", "Минералогия", "ex"],
@@ -960,7 +550,7 @@
           c: "GEO",
           fr: "Géographie",
           ru: "География",
-          f: ["Физическая география", "Экономическая и социальная география", "Территориальное планирование"],
+          f: ["Géographie physique", "Géographie humaine", "Aménagement du territoire"],
           m: [
             ["Géographie physique", "Физическая география", "ex"],
             ["Géographie humaine", "Экономическая и социальная география", "ex"],
@@ -976,62 +566,13 @@
           c: "ENV",
           fr: "Écologie & Environnement",
           ru: "Экология и природопользование",
-          f: ["Общая экология", "Управление окружающей средой"],
+          f: ["Écologie générale", "Gestion de l’environnement"],
           m: [
             ["Écologie générale", "Общая экология", "ex"],
             ["Protection de l’environnement", "Охрана окружающей среды", "ex"],
             ["Gestion des ressources naturelles", "Природопользование", "ex"],
             ["Géochimie de l’environnement", "Геохимия окружающей среды", "za"],
             ["Évaluation d’impact environnemental", "Оценка воздействия на окружающую среду", "za"],
-          ],
-        },
-        bin: {
-          g: "imfit",
-          c: "BIN",
-          fr: "Business informatique",
-          ru: "Бизнес-информатика",
-          f: ["Бизнес-информатика", "Управление информационными системами"],
-          m: [
-            ["Économie de l’entreprise", "Экономика предприятия", "ex"],
-            ["Systèmes d’information de gestion", "Информационные системы управления", "ex"],
-            ["Gestion de projet informatique", "Управление ИТ-проектами", "ex"],
-            ["Comptabilité", "Бухгалтерский учёт", "za"],
-            ["Marketing numérique", "Цифровой маркетинг", "za"],
-            ["Bases de données", "Базы данных", "za"],
-            ["Langue étrangère", "Иностранный язык", "za"],
-            ["Sport", "Физкультура", "za"],
-          ],
-        },
-        ina: {
-          g: "imfit",
-          c: "INA",
-          fr: "Informatique appliquée",
-          ru: "Прикладная информатика",
-          f: ["Прикладная информатика", "Анализ данных"],
-          m: [
-            ["Algorithmique et structures de données", "Алгоритмы и структуры данных", "ex"],
-            ["Programmation", "Программирование", "ex"],
-            ["Mathématiques discrètes", "Дискретная математика", "ex"],
-            ["Bases de données", "Базы данных", "za"],
-            ["Réseaux informatiques", "Компьютерные сети", "za"],
-            ["Langue étrangère", "Иностранный язык", "za"],
-            ["Sport", "Физкультура", "za"],
-          ],
-        },
-        sec: {
-          g: "imfit",
-          c: "SEC",
-          fr: "Sécurité informatique",
-          ru: "Информационная безопасность",
-          f: ["Сетевая безопасность", "Криптография"],
-          m: [
-            ["Cryptographie", "Криптография", "ex"],
-            ["Sécurité des réseaux", "Сетевая безопасность", "ex"],
-            ["Systèmes d’exploitation", "Операционные системы", "ex"],
-            ["Droit de l’information", "Информационное право", "za"],
-            ["Réseaux informatiques", "Компьютерные сети", "za"],
-            ["Langue étrangère", "Иностранный язык", "za"],
-            ["Sport", "Физкультура", "za"],
           ],
         },
       };
@@ -1174,7 +715,6 @@
               const rm = new Set(rem.map((r) => r.mat));
               db.students = rem.concat(db.students.filter((x) => !rm.has(x.mat)));
               synced = sm;
-              normDb();
               saveLocal();
               soft();
               save();
@@ -1188,7 +728,6 @@
             }
             db.students = rem;
             synced = sm;
-            if (normDb()) save();
             saveLocal();
             soft();
             stat("Synchronisé ☁ entre vos appareils");
@@ -1218,40 +757,15 @@
         let m = "",
           t = 0;
         do {
-          m = String(t < 500 ? 1000 + Math.floor(Math.random() * 9000) : 10000 + t - 500);
+          m = "ID" + (t < 500 ? 1000 + Math.floor(Math.random() * 9000) : 10000 + t - 500);
           t++;
         } while (db.students.some((x) => x.mat === m));
         return m;
       };
-      const mnorm = (m) =>
-        String(m || "")
-          .trim()
-          .replace(/^ID/i, "");
-      function normDb() {
-        let ch = false;
-        const map = {};
-        db.students.forEach((s) => {
-          if (/^ID/i.test(String(s.mat || ""))) {
-            const o = s.mat;
-            let n = mnorm(o);
-            if (!/^\d{4,6}$/.test(n) || db.students.some((x) => x !== s && x.mat === n)) n = newMat();
-            map[o] = n;
-            s.mat = n;
-            ch = true;
-          }
-        });
-        if (ch)
-          db.students.forEach((s) =>
-            (s.msg || []).forEach((e) => {
-              if (map[e.wm]) e.wm = map[e.wm];
-            }),
-          );
-        return ch;
-      }
       (() => {
-        let ch = normDb();
+        let ch = false;
         db.students.forEach((s) => {
-          if (!/^\d{4,6}$/.test(String(s.mat))) {
+          if (!/^ID\d{4,6}$/.test(s.mat)) {
             s.mat = newMat();
             ch = true;
           }
@@ -1302,13 +816,7 @@
       let view = "home",
         cur = null,
         tOK = false,
-        msg = "",
-        sec = "ev",
-        tName = "",
-        uq = "",
-        cy = new Date().getFullYear(),
-        cm = new Date().getMonth(),
-        cdy = null;
+        msg = "";
       const TABS = [
         ["home", "Accueil"],
         ["fac", "Facultés"],
@@ -1334,10 +842,13 @@
         return Object.entries(GRP)
           .map(
             ([g, v]) =>
-              `<optgroup label="${v.abbr} — ${v.ru}">` +
+              `<optgroup label="${v.abbr} — ${v.fr}">` +
               Object.entries(FAC)
                 .filter(([k, x]) => x.g === g)
-                .map(([k, x]) => `<option value="${k}" ${sel === k ? "selected" : ""}>${x.ru}</option>`)
+                .map(
+                  ([k, x]) =>
+                    `<option value="${k}" ${sel === k ? "selected" : ""}>${x.fr} — ${x.ru}</option>`,
+                )
                 .join("") +
               "</optgroup>",
           )
@@ -1351,11 +862,11 @@
           .map(([g, v]) => {
             const u = Object.entries(FAC).filter(([k, x]) => x.g === g);
             return (
-              `<tr><td><b>${v.abbr}</b> — ${v.ru}</td><td>${db.students.filter((s) => u.some(([k]) => k === s.fac)).length}</td></tr>` +
+              `<tr><td><b>${v.abbr}</b> — ${v.fr}</td><td>${db.students.filter((s) => u.some(([k]) => k === s.fac)).length}</td></tr>` +
               u
                 .map(
                   ([k, x]) =>
-                    `<tr><td class="mu">&nbsp;&nbsp;↳ ${x.ru}</td><td>${db.students.filter((s) => s.fac === k).length}</td></tr>` +
+                    `<tr><td class="mu">&nbsp;&nbsp;↳ ${x.fr}</td><td>${db.students.filter((s) => s.fac === k).length}</td></tr>` +
                     (x.gr || [])
                       .map(
                         (gg) =>
@@ -1378,18 +889,18 @@
             return `<h4>${t === "ex" ? "Avec examen · экзамен" : "Zachet seulement, sans examen · зачёт"} (${l.length})</h4><div class="w"><table><tr><th>Matière</th><th>Предмет</th></tr>${l.map((m) => `<tr><td>${m.n}</td><td>${m.r}</td></tr>`).join("")}</table></div>`;
           })
           .join("");
-      function facsAll() {
+      function facs() {
         return (
           `<input id="qf" placeholder="Rechercher une faculté ou une matière…">` +
           Object.entries(GRP)
             .map(
               ([g, v]) =>
-                `<div class="card"><h2>${v.abbr} — ${v.ru}</h2><div class="mu">${v.t === "Institut" ? "Институт" : "Факультет"}</div>` +
+                `<div class="card"><h2>${v.abbr} — ${v.fr}</h2><div class="mu">${v.ru} · ${v.t}</div>` +
                 Object.entries(FAC)
                   .filter(([k, x]) => x.g === g)
                   .map(
                     ([k, x]) =>
-                      `<h3>${x.ru}</h3><p class="mu">Направления : ${x.f.join(" · ")}${x.gr ? " · " + x.gr.length + " группы (" + x.gr.join(", ") + ")" : ""} · ${x.m.filter((q) => q[2] === "ex").length} экзамена · ${x.m.filter((q) => q[2] === "za").length} зачётов</p>${FT(k)}`,
+                      `<h3>${x.fr} · ${x.ru}</h3><p class="mu">Filières : ${x.f.join(" · ")}${x.gr ? " · " + x.gr.length + " groupes (" + x.gr.join(", ") + ")" : ""} · ${x.m.filter((q) => q[2] === "ex").length} examens · ${x.m.filter((q) => q[2] === "za").length} zachets</p>${FT(k)}`,
                   )
                   .join("") +
                 `</div>`,
@@ -1398,7 +909,7 @@
         );
       }
       function reg() {
-        return `${cov("Inscription · Регистрация")}<div class="card"><h2>Inscription · Регистрация</h2><label>Nom complet<input id="rn"></label><label>Matricule (facultatif)<input id="rmt" placeholder="5654"></label><p class="mu">Chaque étudiant a un matricule unique et personnel. Le matricule se compose uniquement de chiffres, de 4 à 6 (exemple : 5654), sans lettres. Sans matricule, un numéro vous est attribué automatiquement. Pour vous réinscrire, saisissez votre matricule et votre nom complet tel qu’il est enregistré.</p><label>Faculté<select id="rf">${facOpts("imt")}</select></label><label>Направление (filière)<select id="rl"></select></label><label id="rgw">Группа (groupe)<select id="rgp"></select></label><label>Année d’étude<select id="ra"></select></label><label>Statut (financement)<select id="rsv"><option value="bud">Boursier d’État — бюджет</option><option value="con">Contractuel — контракт (payant)</option></select></label><button id="rg" class="pri">S’inscrire</button><p id="rm">${msg}</p></div>`;
+        return `${cov("Inscription · Регистрация")}<div class="card"><h2>Inscription · Регистрация</h2><label>Nom complet<input id="rn"></label><label>Matricule (facultatif)<input id="rmt" placeholder="ID5654"></label><p class="mu">Chaque étudiant a un matricule unique et personnel. Le matricule a la forme ID suivie de chiffres, de 4 à 6 (exemple : ID5654). Sans matricule, un numéro vous est attribué automatiquement. Pour vous réinscrire, saisissez votre matricule et votre nom complet tel qu’il est enregistré.</p><label>Faculté<select id="rf">${facOpts("imt")}</select></label><label>Filière<select id="rl"></select></label><label id="rgw">Groupe (группа)<select id="rgp"></select></label><label>Année d’étude<select id="ra"></select></label><label>Statut (financement)<select id="rsv"><option value="bud">Boursier d’État — бюджет</option><option value="con">Contractuel — контракт (payant)</option></select></label><button id="rg" class="pri">S’inscrire</button><p id="rm">${msg}</p></div>`;
       }
       function fillFil() {
         const f = $("#rf");
@@ -1416,390 +927,9 @@
         f.onchange = set;
         set();
       }
-      const MO = [
-        "января",
-        "февраля",
-        "марта",
-        "апреля",
-        "мая",
-        "июня",
-        "июля",
-        "августа",
-        "сентября",
-        "октября",
-        "ноября",
-        "декабря",
-      ];
-      const two = (n) => ("0" + n).slice(-2);
-      const ft = (ms) => {
-        const d = new Date(ms),
-          n = new Date(),
-          dd = Math.round(
-            (new Date(n.getFullYear(), n.getMonth(), n.getDate()) -
-              new Date(d.getFullYear(), d.getMonth(), d.getDate())) /
-              864e5,
-          );
-        return (
-          (dd <= 0 ? "Сегодня" : dd === 1 ? "Вчера" : d.getDate() + " " + MO[d.getMonth()]) +
-          " в " +
-          d.getHours() +
-          ":" +
-          two(d.getMinutes())
-        );
-      };
-      const ini = (t) =>
-        String(t)
-          .trim()
-          .split(/\s+/)
-          .slice(0, 2)
-          .map((w) => w[0] || "")
-          .join("")
-          .toUpperCase() || "П";
-      let ROOM = null,
-        peersNow = [],
-        lastSig = "",
-        lastPo = false,
-        uc = 0,
-        tIn = [],
-        cto = "";
-      const MOG = [
-        "января",
-        "февраля",
-        "марта",
-        "апреля",
-        "мая",
-        "июня",
-        "июля",
-        "августа",
-        "сентября",
-        "октября",
-        "ноября",
-        "декабря",
-      ];
-      const ftg = (ms) => {
-        const d = new Date(ms),
-          n = new Date(),
-          dd = Math.round(
-            (new Date(n.getFullYear(), n.getMonth(), n.getDate()) -
-              new Date(d.getFullYear(), d.getMonth(), d.getDate())) /
-              864e5,
-          );
-        return (
-          (dd <= 0 ? "Сегодня" : dd === 1 ? "Вчера" : d.getDate() + " " + MOG[d.getMonth()]) +
-          " в " +
-          d.getHours() +
-          ":" +
-          ("0" + d.getMinutes()).slice(-2)
-        );
-      };
-      const onlineSet = () =>
-        new Set(peersNow.filter((p) => p.presence && p.presence.mat).map((p) => p.presence.mat));
-      const profOnline = () => peersNow.some((p) => p.presence && p.presence.role === "prof");
-      function note(t) {
-        let e = document.getElementById("toast");
-        if (!e) {
-          e = document.createElement("div");
-          e.id = "toast";
-          e.setAttribute("role", "status");
-          document.body.appendChild(e);
-        }
-        e.textContent = t;
-        e.className = "show";
-        clearTimeout(note.t);
-        note.t = setTimeout(() => {
-          e.className = "";
-        }, 4500);
-      }
-      function announce() {
-        if (!ROOM) return;
-        const s = cur && db.students.find((x) => x.mat === cur);
-        const sig = (s ? s.mat : "") + "|" + (tOK ? "p" : "");
-        if (sig === lastSig) return;
-        lastSig = sig;
-        Promise.resolve(
-          ROOM.presence({ mat: s ? s.mat : null, role: tOK ? "prof" : s ? "stu" : null }),
-        ).catch(() => {});
-      }
-      function sendLive(d) {
-        if (!ROOM) return;
-        Promise.resolve(ROOM.emit("chat", d)).catch((e) =>
-          note(
-            e && e.code === "not_permitted"
-              ? "Envoi en direct non autorisé pour ce compte (accès Contributeur requis) · Живая отправка недоступна"
-              : "Envoi en direct impossible",
-          ),
-        );
-      }
-      function drawOnline() {
-        const e = $("#ol");
-        if (!e) return;
-        const l = db.students.filter(online);
-        e.innerHTML = l.length
-          ? l
-              .map(
-                (x) =>
-                  `<div class="pfr"><span><span class="ok">●</span> <b>${esc(x.nom)}</b><div class="mu">${FAC[x.fac] ? FAC[x.fac].c : ""} · ${esc(fl2(x.fil || ""))}</div></span><button data-wr="${x.mat}">Écrire</button></div>`,
-              )
-              .join("")
-          : '<p class="mu">Personne en ligne pour le moment · Сейчас никого нет в сети.</p>';
-        e.querySelectorAll("[data-wr]").forEach(
-          (b) =>
-            (b.onclick = () => {
-              const t = $("#tmt");
-              if (t) {
-                t.value = b.dataset.wr;
-                $("#tmx").focus();
-              }
-            }),
-        );
-      }
-      function drawTIn() {
-        const e = $("#tin");
-        if (!e) return;
-        e.innerHTML = tIn.length
-          ? tIn
-              .slice()
-              .reverse()
-              .map(
-                (m) =>
-                  `<div class="pfr"><span><b>${esc(m.who)}</b><div>${esc(m.x)}</div><div class="mu">${ftg(m.t)}</div></span></div>`,
-              )
-              .join("")
-          : '<p class="mu">Aucun message reçu pendant cette session.</p>';
-      }
-      function drawThread() {
-        const e = $("#thd"),
-          s = db.students.find((x) => x.mat === cur),
-          t = $("#mt");
-        if (!e || !s || !t) return;
-        cto = t.value;
-        let l = (s.msg || [])
-          .filter((m) => (cto === "*prof" ? m.wm === "prof" : m.wm === cto))
-          .sort((a, b) => a.t - b.t);
-        l = [...new Map(l.map((m) => [m.id || m.t + m.x, m])).values()];
-        e.innerHTML = l.length
-          ? l
-              .map((m) => `<div class="bb ${m.dir}"><div>${esc(m.x)}</div><small>${ftg(m.t)}</small></div>`)
-              .join("")
-          : '<p class="mu">Aucun message avec cette personne · Сообщений пока нет.</p>';
-        e.scrollTop = e.scrollHeight;
-      }
-      function paintOnline() {
-        document.querySelectorAll("#mt option[data-n],#tmt option[data-n]").forEach((o) => {
-          const x = db.students.find((y) => y.mat === o.value);
-          o.textContent = (x && online(x) ? "● " : "○ ") + o.dataset.n;
-        });
-        const c = $("#onc");
-        if (c) {
-          const s = db.students.find((x) => x.mat === cur);
-          const n = s ? db.students.filter((x) => x.mat !== s.mat && x.fac === s.fac && online(x)).length : 0;
-          c.textContent = "В сети сейчас · En ligne maintenant : " + n;
-        }
-        if (view === "stu" && sec === "us") drawUsers();
-        if ($("#ol")) drawOnline();
-        const q = $("#qs");
-        if (q) q.dispatchEvent(new Event("input"));
-      }
-      async function startRoom() {
-        try {
-          const r = await window.claude.use("room");
-          if (!r) return;
-          ROOM = r;
-          r.onPeers(
-            (c) => {
-              peersNow = c.peers;
-              const po = profOnline();
-              if (po !== lastPo) {
-                lastPo = po;
-                if (view === "stu" && sec === "ms") {
-                  render();
-                  return;
-                }
-              }
-              paintOnline();
-            },
-            () => {},
-          );
-          r.on(
-            "chat",
-            (m) => {
-              const d = m.data;
-              if (!d || typeof d !== "object" || (m.isMe && m.sameTab)) return;
-              const nm = String(d.nm || "").slice(0, 80),
-                x = String(d.x || "").slice(0, 1000);
-              if (d.to === "*prof") {
-                if (!tOK) return;
-                tIn.push({ t: Number(d.t) || Date.now(), who: nm, x });
-                if (view === "prof") drawTIn();
-                note("Nouveau message de " + nm);
-                return;
-              }
-              const s = cur && db.students.find((y) => y.mat === cur);
-              if (!s || d.to !== cur) return;
-              if (!(s.msg = s.msg || []).some((e) => e.id === d.id)) {
-                s.msg.push({
-                  id: String(d.id),
-                  t: Number(d.t) || Date.now(),
-                  dir: "in",
-                  who: nm,
-                  wm: String(d.wm || ""),
-                  x,
-                });
-                saveLocal();
-              }
-              if (view === "stu" && sec === "ms") {
-                drawThread();
-              } else {
-                uc++;
-                const b = $("#bdg");
-                if (b) b.textContent = uc;
-                else if (view === "stu") render();
-              }
-              note("Новое сообщение · Nouveau message de " + nm);
-            },
-            () => {},
-          );
-          announce();
-          paintOnline();
-        } catch (e) {}
-      }
-      const FR2RU = {
-        "Génie logiciel": "Программная инженерия",
-        "Systèmes d’information": "Информационные системы",
-        "Mathématiques fondamentales": "Фундаментальная математика",
-        "Mathématiques appliquées": "Прикладная математика",
-        "Physique générale": "Общая физика",
-        "Physique appliquée": "Прикладная физика",
-        "Sociologie générale": "Общая социология",
-        "Sociologie du développement": "Социология развития",
-        "Psychologie clinique": "Клиническая психология",
-        "Psychologie sociale": "Социальная психология",
-        "Relations internationales": "Международные отношения",
-        "Administration publique": "Государственное управление",
-        "Travail social": "Социальная работа",
-        "Action communautaire": "Работа с сообществами",
-        Économie: "Экономика",
-        Management: "Менеджмент",
-        "Droit privé": "Частное право",
-        "Droit public": "Публичное право",
-        "Langue russe": "Русский язык",
-        Linguistique: "Лингвистика",
-        "Médecine générale": "Лечебное дело",
-        Chirurgie: "Хирургия",
-        "Médecine interne": "Внутренние болезни",
-        "Pédiatrie générale": "Общая педиатрия",
-        Néonatologie: "Неонатология",
-        "Chirurgie dentaire": "Хирургическая стоматология",
-        Orthodontie: "Ортодонтия",
-        "Pharmacie clinique": "Клиническая фармация",
-        "Technologie pharmaceutique": "Фармацевтическая технология",
-        "Géologie générale": "Общая геология",
-        Hydrogéologie: "Гидрогеология",
-        "Géologie minière": "Горная геология",
-        "Géographie physique": "Физическая география",
-        "Géographie humaine": "Экономическая и социальная география",
-        "Aménagement du territoire": "Территориальное планирование",
-        "Écologie générale": "Общая экология",
-        "Gestion de l’environnement": "Управление окружающей средой",
-        "Business informatique": "Бизнес-информатика",
-        "Gestion des systèmes d’information": "Управление информационными системами",
-        "Informatique appliquée": "Прикладная информатика",
-        "Analyse de données": "Анализ данных",
-        "Sécurité des réseaux": "Сетевая безопасность",
-        Cryptographie: "Криптография",
-      };
-      const fl2 = (x) => FR2RU[x] || x;
-      const gr2 = (x) => String(x || "").replace(/^Groupe /, "Группа ");
-      (() => {
-        let ch = false;
-        db.students.forEach((s) => {
-          if (FR2RU[s.fil]) {
-            s.fil = FR2RU[s.fil];
-            ch = true;
-          }
-          if (/^Groupe /.test(s.gr || "")) {
-            s.gr = gr2(s.gr);
-            ch = true;
-          }
-        });
-        if (ch) save();
-      })();
-      let pfc = "all",
-        pfe = null;
-      const PC = [
-        ["dip", "Diplôme / certificat", "Диплом"],
-        ["stg", "Stage", "Стажировка"],
-        ["con", "Concours / olympiade", "Конкурс"],
-        ["prj", "Projet", "Проект"],
-        ["pub", "Publication", "Публикация"],
-        ["spo", "Sport / culture", "Спорт"],
-        ["oth", "Autre", "Другое"],
-      ];
-      const pcl = (k) => {
-        const c = PC.find((x) => x[0] === k) || PC[6];
-        return c[1] + " · " + c[2];
-      };
-      const pfn = (e) =>
-        e.title
-          ? e
-          : Object.assign({}, e, {
-              title: e.x || "",
-              cat: "oth",
-              d: new Date(e.t).toISOString().slice(0, 10),
-              desc: "",
-              link: "",
-              st: e.st || "wait",
-            });
-      const pfd = (d) => (d ? String(d).split("-").reverse().join(".") : "");
-      function drawPend() {
-        const e = $("#pp2");
-        if (!e) return;
-        const l = [];
-        db.students.forEach((s) =>
-          (s.pf || []).forEach((x) => {
-            const y = pfn(x);
-            if (y.st !== "ok" && y.st !== "no") l.push([s, y]);
-          }),
-        );
-        e.innerHTML = l.length
-          ? l
-              .map(
-                ([s, x]) =>
-                  `<div class="pfr"><span><b>${esc(s.nom)}</b> · ${esc(x.title)}<div class="mu">${esc(pcl(x.cat))} · ${pfd(x.d)}</div>${x.desc ? `<div>${esc(x.desc)}</div>` : ""}${x.link ? `<div><a href="${esc(x.link)}" target="_blank" rel="noopener noreferrer">${esc(x.link)}</a></div>` : ""}</span><span><button data-pv="${s.mat}|${x.t}" class="pri">Valider</button> <button data-pr="${s.mat}|${x.t}">Rejeter</button></span></div>`,
-              )
-              .join("")
-          : '<p class="mu">Aucune entrée à valider · Нет записей на проверку.</p>';
-        e.querySelectorAll("[data-pv],[data-pr]").forEach(
-          (b) =>
-            (b.onclick = () => {
-              const ok = b.dataset.pv !== undefined,
-                [m, t] = (b.dataset.pv || b.dataset.pr).split("|"),
-                s = db.students.find((y) => y.mat === m),
-                i = s ? (s.pf || []).findIndex((y) => String(y.t) === t) : -1;
-              if (i < 0) return;
-              s.pf[i] = Object.assign(pfn(s.pf[i]), { st: ok ? "ok" : "no" });
-              if (ok) (s.ev = s.ev || []).push({ t: Date.now(), k: "f", m: s.pf[i].title, by: tName });
-              save();
-              drawPend();
-            }),
-        );
-      }
-      let lastBeat = 0;
-      const online = (x) =>
-        (ROOM && onlineSet().has(x.mat)) || (!ROOM && x.on !== false && Date.now() - (x.seen || 0) < 150000);
-      function beat() {
-        if (ROOM) return;
-        const s = db.students.find((x) => x.mat === cur);
-        if (s && Date.now() - lastBeat > 25000) {
-          lastBeat = Date.now();
-          s.seen = lastBeat;
-          s.on = true;
-          save();
-        }
-      }
       function stu() {
         const s = db.students.find((x) => x.mat === cur);
-        const login = `<div class="card np"><h2>Connexion étudiant</h2><label>Matricule<input id="lm" placeholder="5654"></label><button id="lg" class="pri">Voir mon dossier</button> <span class="rd">${msg}</span></div>`;
+        const login = `<div class="card np"><h2>Connexion étudiant</h2><label>Matricule<input id="lm" placeholder="ID5654"></label><button id="lg" class="pri">Voir mon dossier</button> <span class="rd">${msg}</span></div>`;
         if (!s) return login;
         const m = moy(s),
           p = prs(s),
@@ -1827,7 +957,6 @@
                     : '<span class="wa">À repasser</span>';
           return `<tr><td>${x.n}<div class="mu">${x.r}</div></td><td>${TY(x.t)}</td><td>${(s.g[x.n] || []).join(" · ") || "—"}</td><td>${f1(a)}</td><td><div class="bar"><i style="width:${pp || 0}%;background:${pp != null && pp < 50 ? "var(--rd)" : "var(--ok)"}"></i></div>${pp == null ? "—" : pp + " %"}</td><td>${st}</td></tr>`;
         };
-        if (sec === "ms") uc = 0;
         const an = Math.min(s.an, yrs(s.fac));
         const rk = L.filter(
           (x) => (s.p[x.n] != null && s.p[x.n] < 50) || (avg(s.g[x.n]) != null && avg(s.g[x.n]) < 2.5),
@@ -1835,283 +964,14 @@
         const al = rk.length
           ? `<div class="card alert"><h2 class="rd">Attention · Внимание</h2><p>${rk.map((x) => `<b>${x.n}</b> : ${s.p[x.n] != null && s.p[x.n] < 50 ? "présence inférieure à 50 % (недопуск)" : "moyenne insuffisante"}`).join("<br>")}</p></div>`
           : "";
-        const SV = (d) => `<svg viewBox="0 0 24 24">${d}</svg>`;
-        const MENU = [
-          [
-            "ev",
-            "События",
-            "Événements",
-            '<path d="M6 8a6 6 0 0112 0c0 7 3 8 3 8H3s3-1 3-8M10 20a2 2 0 004 0"/>',
-          ],
-          [
-            "sv",
-            "Анкетирование",
-            "Questionnaires",
-            '<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 14l2 2 4-4"/>',
-          ],
-          [
-            "di",
-            "Дисциплины",
-            "Disciplines",
-            '<path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>',
-          ],
-          [
-            "ex",
-            "Экзамены",
-            "Examens et zachets",
-            '<path d="M2 5c4-1 7 0 10 2 3-2 6-3 10-2v14c-4-1-7 0-10 2-3-2-6-3-10-2zM12 7v14"/>',
-          ],
-          ["pf", "Портфолио", "Portfolio", '<path d="M6 3h9l4 4v14H6zM14 3v5h5"/>'],
-          [
-            "sp",
-            "Справки",
-            "Attestations",
-            '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 10h4M7 14h6M15 10h2"/>',
-          ],
-          [
-            "us",
-            "Пользователи",
-            "Utilisateurs",
-            '<circle cx="9" cy="8" r="3"/><path d="M3 20c0-4 3-6 6-6s6 2 6 6M16 5a3 3 0 010 6M18 14c2 1 3 3 3 6"/>',
-          ],
-          ["ms", "Сообщения", "Messages", '<path d="M4 5h16v11H9l-5 4z"/>'],
-          ["lb", "Библиотека", "Bibliothèque", '<path d="M4 4h4v16H4zM10 4h4v16h-4zM17 5l4 1-3 14-4-1z"/>'],
-          ["dc", "Документы", "Documents", '<path d="M3 6h7l2 2h9v11H3z"/>'],
-          [
-            "cl",
-            "Календарь",
-            "Calendrier",
-            '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
-          ],
-          [
-            "st",
-            "Настройки",
-            "Profil",
-            '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>',
-          ],
-        ];
-        const nmw = s.nom.trim().split(/\s+/);
-        const sb = `<aside class="sb"><div class="av">${esc(ini(s.nom))}</div><div class="nm">${esc(nmw[0])}<br>${esc(nmw[1] || "")}<div class="mu">${s.mat}</div></div>${MENU.map(([k, r, f, i]) => `<button class="${sec === k ? "on" : ""}" data-sec="${k}" title="${f}">${SV(i)}<span>${r}</span>${k === "ms" && uc ? `<b class="bdg" id="bdg">${uc}</b>` : ""}</button>`).join("")}<button id="out" title="Se déconnecter">${SV('<path d="M10 4H4v16h6M14 8l4 4-4 4M18 12H9"/>')}<span>Выйти</span></button></aside>`;
-        const topb = `<div class="topb"><div class="sr"><input id="us" placeholder="Поиск пользователей" autocomplete="off"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div><div class="ic"><button id="tp" title="Profil">${SV('<circle cx="12" cy="8" r="4"/><path d="M4 21c0-5 4-7 8-7s8 2 8 7"/>')}</button><button id="ti" title="Attestations">${SV('<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/>')}</button><button id="th" title="Aide">${SV('<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 015 .5c0 1.5-2.5 2-2.5 3.5M12 17h.01"/>')}</button></div></div>`;
-        const cd = (t, b) => `<div class="card"><div class="eh">${t}</div><div class="cb">${b}</div></div>`;
-        const clk =
-          '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
-        const al2 = rk.length
-          ? `<div class="card alert"><div class="cb"><b class="rd">Внимание · Attention</b><br>${rk.map((x) => `<b>${x.n}</b> : ${s.p[x.n] != null && s.p[x.n] < 50 ? "présence inférieure à 50 % (недопуск)" : "moyenne insuffisante"}`).join("<br>")}</div></div>`
-          : "";
-        const evs = (s.ev || [])
-          .slice()
-          .sort((a, b) => b.t - a.t)
-          .slice(0, 30);
-        const feed = evs.length
-          ? evs
-              .map(
-                (e) =>
-                  `<div class="ev"><div class="ea">${esc(ini(e.by || "П"))}</div><div><div>Преподаватель${e.by ? ' <span class="g">' + esc(e.by) + "</span>" : ""} ${e.k === "f" ? "подтвердил запись портфолио" : e.k === "p" ? "заполнил протокол занятия" : "заполнил протокол рубежного контроля"} ${e.k === "f" ? "" : "по дисциплине"} <span class="g">«${esc(e.m)}»</span>${e.k === "g" ? " · оценка <b>" + e.v + "</b>" : ""}</div><div class="tm">${clk} ${ft(e.t)}</div></div></div>`,
-              )
-              .join("")
-          : '<div class="cb"><p class="mu">Aucun événement pour le moment · Событий пока нет.</p></div>';
-        const mates = db.students.filter((x) => x.mat !== s.mat && x.fac === s.fac);
-        const pfl = (s.pf || []).slice().sort((a, b) => b.t - a.t);
-        const msgs = (s.msg || []).slice().sort((a, b) => b.t - a.t);
-        const CM = [
-          "Январь",
-          "Февраль",
-          "Март",
-          "Апрель",
-          "Май",
-          "Июнь",
-          "Июль",
-          "Август",
-          "Сентябрь",
-          "Октябрь",
-          "Ноябрь",
-          "Декабрь",
-        ];
-        const dayEv = {};
-        (s.ev || []).forEach((e) => {
-          const d = new Date(e.t);
-          if (d.getFullYear() === cy && d.getMonth() === cm)
-            (dayEv[d.getDate()] = dayEv[d.getDate()] || []).push({
-              t: e.t,
-              x:
-                "Преподаватель" +
-                (e.by ? " " + e.by : "") +
-                " " +
-                (e.k === "f"
-                  ? "подтвердил запись портфолио"
-                  : e.k === "p"
-                    ? "заполнил протокол занятия"
-                    : "заполнил протокол рубежного контроля") +
-                (e.k === "f" ? " «" : " по дисциплине «") +
-                e.m +
-                "»",
-            });
-        });
-        (db.ann || []).forEach((a) => {
-          const q = String(a.d).split("-");
-          if (+q[0] === cy && +q[1] - 1 === cm)
-            (dayEv[+q[2]] = dayEv[+q[2]] || []).push({
-              t: new Date(+q[0], +q[1] - 1, +q[2]).getTime(),
-              x: "Объявление · Annonce : " + a.t,
-            });
-        });
-        const c1 = new Date(cy, cm, 1),
-          c0 = (c1.getDay() + 6) % 7,
-          cn = new Date(cy, cm + 1, 0).getDate(),
-          now0 = new Date();
-        let cells = "";
-        for (let i = 0; i < c0; i++) cells += "<td></td>";
-        for (let d = 1; d <= cn; d++) {
-          if ((c0 + d - 1) % 7 === 0 && d > 1) cells += "</tr><tr>";
-          const td = now0.getFullYear() === cy && now0.getMonth() === cm && now0.getDate() === d;
-          cells += `<td><button data-cd="${d}" class="${td ? "td " : ""}${cdy === d ? "sel " : ""}${dayEv[d] ? "dt" : ""}">${d}</button></td>`;
-        }
-        const sel =
-          cdy && dayEv[cdy]
-            ? dayEv[cdy].map((e) => `<div class="pfr"><span>${esc(e.x)}</span></div>`).join("")
-            : cdy
-              ? '<p class="mu">Aucun événement ce jour · В этот день событий нет.</p>'
-              : '<p class="mu">Choisissez un jour · Выберите день.</p>';
-        const calH = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><button id="cp" title="Mois précédent">‹</button><b style="font-size:17px">${CM[cm]} ${cy}</b><button id="cn" title="Mois suivant">›</button></div><table class="cal"><tr>${["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"].map((x) => `<th>${x}</th>`).join("")}</tr><tr>${cells}</tr></table><p><button id="ct">Сегодня · Aujourd’hui</button></p><h4>${cdy ? cdy + " " + MO[cm] + " " + cy : "События дня · Événements du jour"}</h4>${sel}`;
-        const sect = {
-          cl: cd("Календарь", calH),
-          ev: `${al2}<div class="card"><div class="eh">События</div>${feed}</div>`,
-          sv: cd(
-            "Анкетирование",
-            '<p class="mu">Aucun questionnaire actif pour le moment · Активных анкет нет.</p>',
-          ),
-          di: cd(
-            "Дисциплины · Семестр 1",
-            `<p class="mu">${L.length} matières · ${L.filter((x) => x.t === "ex").length} examens · ${L.filter((x) => x.t === "za").length} zachets</p><div class="w"><table><tr><th>№</th><th>Дисциплина</th><th>Контроль</th></tr>${[
-              ...L,
-            ]
-              .sort((a, b) => (a.t === "ex" ? 0 : 1) - (b.t === "ex" ? 0 : 1))
-              .map(
-                (x, i) =>
-                  `<tr><td>${i + 1}</td><td>${x.r}<div class="mu">${x.n}</div></td><td>${TY(x.t)}</td></tr>`,
-              )
-              .join("")}</table></div>`,
-          ),
-          ex:
-            cd(`Экзамены · Семестр 1 (${L.filter((x) => x.t === "ex").length})`, tb("ex")) +
-            cd(`Зачёты · Семестр 1 (${L.filter((x) => x.t === "za").length})`, tb("za")),
-          pf: cd(
-            "Портфолио",
-            (() => {
-              const all = (s.pf || [])
-                  .map(pfn)
-                  .sort((x, y) => (y.d || "").localeCompare(x.d || "") || y.t - x.t),
-                ed = pfe && all.find((e) => String(e.t) === pfe),
-                td = new Date(),
-                today = td.getFullYear() + "-" + two(td.getMonth() + 1) + "-" + two(td.getDate()),
-                l = pfc === "all" ? all : all.filter((e) => e.cat === pfc);
-              const stt = (e) =>
-                e.st === "ok"
-                  ? '<span class="ok">✔ Подтверждено · Confirmé</span>'
-                  : e.st === "no"
-                    ? '<span class="rd">✖ Отклонено · Refusé, à corriger</span>'
-                    : '<span class="wa">⏳ На проверке · En attente de validation</span>';
-              return `<p class="mu">${all.length} записей · ${all.filter((e) => e.st === "ok").length} подтверждено · ${all.length} entrées, ${all.filter((e) => e.st === "ok").length} confirmées</p>
-<div class="att"><b>${ed ? "Изменить · Modifier" : "Добавить · Ajouter une réalisation"}</b>
-<label>Catégorie · Категория<select id="pfc">${PC.map((c) => `<option value="${c[0]}"${(ed ? ed.cat : "oth") === c[0] ? " selected" : ""}>${c[1]} · ${c[2]}</option>`).join("")}</select></label>
-<label>Titre · Название<input id="pft" maxlength="120" value="${ed ? esc(ed.title) : ""}" placeholder="Ex. Certificat de langue, stage, olympiade…"></label>
-<label>Date<input id="pfd" type="date" value="${ed ? esc(ed.d || today) : today}"></label>
-<label>Description · Описание<textarea id="pfx" rows="3" maxlength="500">${ed ? esc(ed.desc || "") : ""}</textarea></label>
-<label>Lien · Ссылка (https://…, facultatif)<input id="pfl" maxlength="300" value="${ed ? esc(ed.link || "") : ""}"></label>
-<button id="pa" class="pri">${ed ? "Enregistrer" : "Ajouter"}</button>${ed ? ' <button id="pq">Annuler</button>' : ""} <span class="rd" id="pfm"></span></div>
-<div class="chips"><button data-pf="all" class="${pfc === "all" ? "on" : ""}">Все · Tout (${all.length})</button>${PC.filter(
-                (c) => all.some((e) => e.cat === c[0]),
-              )
-                .map(
-                  (c) =>
-                    `<button data-pf="${c[0]}" class="${pfc === c[0] ? "on" : ""}">${c[2]} (${all.filter((e) => e.cat === c[0]).length})</button>`,
-                )
-                .join("")}</div>
-${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.cat))}</span> <b>${esc(e.title)}</b></div><div class="mu">${pfd(e.d)}</div>${e.desc ? `<div>${esc(e.desc)}</div>` : ""}${e.link ? `<div><a href="${esc(e.link)}" target="_blank" rel="noopener noreferrer">${esc(e.link)}</a></div>` : ""}<div>${stt(e)}</div><div class="np"><button data-pe="${e.t}">Modifier</button> <button data-pd="${e.t}">Supprimer</button></div></div>`).join("") : '<p class="mu">Votre portfolio est vide · Портфолио пусто.</p>'}
-<p class="np"><button onclick="print()">Imprimer le portfolio · Печать</button></p>`;
-            })(),
-          ),
-          sp: cd(
-            "Справки",
-            `<div class="att"><p style="text-align:center"><b>СПРАВКА · ATTESTATION DE SCOLARITÉ</b></p><p>Дана ${esc(s.nom)} (матрикул <b>${s.mat}</b>) в том, что он(а) является студентом(кой) ${an} курса, ${GRP[FAC[s.fac].g].abbr}, «${FAC[s.fac].ru}», ${esc(fl2(s.fil))}${s.gr ? ", " + gr2(s.gr) : ""}.</p><p>Nous attestons que ${esc(s.nom)} (matricule ${s.mat}) est inscrit(e) en année ${an}, ${FAC[s.fac].ru}, filière ${esc(fl2(s.fil))}${ST[s.st] ? " · " + ST[s.st] : ""}.</p><p class="mu">Чеченский государственный университет имени А. А. Кадырова · Грозный · ${new Date().toLocaleDateString("fr-FR")}</p></div><button onclick="print()">Imprimer · Печать</button>`,
-          ),
-          us: cd("Пользователи", `<p class="mu" id="oc"></p><div id="ul"></div>`),
-          ms: cd(
-            "Сообщения",
-            `<p class="mu" id="onc">В сети сейчас · En ligne maintenant : ${mates.filter(online).length}</p>${
-              mates.length || profOnline()
-                ? `<label>Кому · Destinataire<select id="mt">${profOnline() ? `<option value="*prof" data-n="Преподаватель · Enseignant">● Преподаватель · Enseignant</option>` : ""}${[
-                    ...mates,
-                  ]
-                    .sort((x, y) => (online(y) ? 1 : 0) - (online(x) ? 1 : 0))
-                    .map(
-                      (x) =>
-                        `<option value="${x.mat}" data-n="${esc(x.nom)}">${online(x) ? "● " : "○ "}${esc(x.nom)}</option>`,
-                    )
-                    .join(
-                      "",
-                    )}</select></label><div id="thd" class="thd"></div><textarea id="mx" rows="2" placeholder="Сообщение · Message"></textarea><button id="ms" class="pri">Envoyer</button>`
-                : '<p class="mu">Aucun autre étudiant dans votre faculté pour le moment.</p>'
-            }`,
-          ),
-          lb: cd(
-            "Библиотека",
-            '<p class="mu">Aucun document dans la bibliothèque pour le moment · Библиотека пуста.</p>',
-          ),
-          dc: cd(
-            "Документы · Зачётная книжка",
-            `<p>Moyenne : <b>${f1(m)}</b> · Mention : <b>${mention(m)}</b></p><h4>Экзамены · Examens</h4>${tb("ex")}<h4>Зачёты · Zachets</h4>${tb("za")}<p class="np"><button onclick="print()">Imprimer le relevé · Печать</button></p>`,
-          ),
-          st: cd(
-            "Настройки",
-            `<div class="mu">Carte d’étudiant · Студенческий билет</div><h2>${esc(s.nom)}</h2><div class="mat">${s.mat}</div><div class="mu">${GRP[FAC[s.fac].g].abbr} · ${FAC[s.fac].ru} · ${esc(fl2(s.fil))} · курс ${an}${an === 7 ? " (практика)" : ""}${s.gr ? " · " + gr2(s.gr) : ""}${ST[s.st] ? " · " + ST[s.st] : ""}</div><div class="grid" style="margin-top:14px"><div class="stat"><b>${f1(m)}</b><span class="mu">moyenne /5</span></div><div class="stat"><b>${p == null ? "—" : Math.round(p) + " %"}</b><span class="mu">présence moyenne</span></div><div class="stat"><b>${rank(s)}</b><span class="mu">rang dans la sous-faculté</span></div></div>`,
-          ),
-        };
-        return `<div class="ucx">${sb}<section class="mn">${topb}${sect[sec] || sect.ev}</section></div>`;
-      }
-      function drawUsers() {
-        const s = db.students.find((x) => x.mat === cur),
-          u = $("#ul");
-        if (!s || !u) return;
-        const q = uq.toLowerCase();
-        const l = db.students
-          .filter((x) => x.mat !== s.mat && x.fac === s.fac && x.nom.toLowerCase().includes(q))
-          .sort((a, b) => (online(b) ? 1 : 0) - (online(a) ? 1 : 0) || a.nom.localeCompare(b.nom));
-        const oc = $("#oc");
-        if (oc) oc.textContent = l.filter(online).length + " в сети · en ligne sur " + l.length;
-        u.innerHTML = l.length
-          ? l
-              .map((x) => {
-                const on = online(x);
-                return `<div class="ev" style="padding:12px 0;gap:14px"><div class="ea" style="position:relative;flex-basis:40px;height:40px;font-size:14px">${esc(ini(x.nom))}<i class="dot${on ? " on" : ""}"></i></div><div><b>${esc(x.nom)}</b><div class="mu">${esc(fl2(x.fil))}${x.gr ? " · " + gr2(x.gr) : ""} · ${FAC[x.fac].c}</div><div class="mu">${on ? '<span class="ok">● В сети · En ligne</span>' : x.seen ? "Был(а) в сети · " + ft(x.seen) : "Не в сети · Hors ligne"}</div></div><button data-wc="${x.mat}" style="margin-left:auto;align-self:center">Écrire</button></div>`;
-              })
-              .join("")
-          : '<p class="mu">Aucun utilisateur trouvé · Никого не найдено.</p>';
-        u.querySelectorAll("[data-wc]").forEach(
-          (b) =>
-            (b.onclick = () => {
-              cto = b.dataset.wc;
-              sec = "ms";
-              render();
-            }),
-        );
+        return `<div class="card"><div class="mu">Carte d’étudiant · Студенческий билет</div><h2>${esc(s.nom)}</h2><div class="mat">${s.mat}</div><div class="mu">${GRP[FAC[s.fac].g].abbr} · ${FAC[s.fac].fr} · ${esc(s.fil)} · année ${an}${an === 7 ? " (pratique)" : ""}${s.gr ? " · " + s.gr + " (группа)" : ""}${ST[s.st] ? " · " + ST[s.st] : ""}</div></div>
+<div class="grid"><div class="card stat"><b>${f1(m)}</b><span class="mu">moyenne /5</span></div><div class="card stat"><b>${p == null ? "—" : Math.round(p) + " %"}</b><span class="mu">présence moyenne</span></div><div class="card stat"><b>${rank(s)}</b><span class="mu">rang dans la sous-faculté</span></div></div>
+${al}<div class="card"><h2>Relevé de notes · Ведомость</h2><p>Mention : <b>${mention(m)}</b></p><h3>Matières avec examen · Экзамены (${L.filter((x) => x.t === "ex").length})</h3>${tb("ex")}<h3>Matières avec zachet, sans examen · Зачёты (${L.filter((x) => x.t === "za").length})</h3>${tb("za")}<p class="np"><button onclick="print()">Imprimer le relevé</button> <button id="out">Se déconnecter</button></p></div>`;
       }
       function prof() {
         if (!tOK)
           return `<div class="card"><h2>Espace enseignant</h2><label>Code d’accès<input id="pc" type="password" placeholder="Code enseignant"></label><button id="pl" class="pri">Entrer</button> <span class="rd">${msg}</span></div>`;
-        return `<div class="card"><h2>Saisie des notes et de la présence</h2><label>Faculté<select id="pf">${facOpts("imt")}</select></label><label>Étudiant<select id="ps"></select></label><label>Matière<select id="pm"></select></label><label>Nom de l’enseignant (affiché aux étudiants)<input id="pt" value="${esc(tName)}" placeholder="Nom Prénom"></label><label>Note (0 à 5)<input id="pn" type="number" min="0" max="5" step="0.5"></label><label>Présence (%)<input id="pp" type="number" min="0" max="100"></label><button id="pv" class="pri">Enregistrer</button> <button id="pu">Annuler la dernière note</button> <button id="pd">Supprimer l’étudiant</button> <button id="po">Se déconnecter</button> <span class="ok" id="pr">${msg}</span></div>
-<div class="card"><h2>Portfolios à valider · Портфолио на проверку</h2><div id="pp2"></div></div>
-<div class="card"><h2>En ligne · В сети</h2><div id="ol"></div></div>
-<div class="card"><h2>Messages · Сообщения</h2><label>Destinataire<select id="tmt">${[...db.students]
-          .sort((x, y) => (online(y) ? 1 : 0) - (online(x) ? 1 : 0) || x.nom.localeCompare(y.nom))
-          .map(
-            (x) =>
-              `<option value="${x.mat}" data-n="${esc(x.nom)}">${online(x) ? "● " : "○ "}${esc(x.nom)}</option>`,
-          )
-          .join(
-            "",
-          )}</select></label><textarea id="tmx" rows="2" placeholder="Message"></textarea><button id="tms" class="pri">Envoyer</button><h3>Reçus (session) · Полученные</h3><div id="tin"></div></div>
+        return `<div class="card"><h2>Saisie des notes et de la présence</h2><label>Faculté<select id="pf">${facOpts("imt")}</select></label><label>Étudiant<select id="ps"></select></label><label>Matière<select id="pm"></select></label><label>Note (0 à 5)<input id="pn" type="number" min="0" max="5" step="0.5"></label><label>Présence (%)<input id="pp" type="number" min="0" max="100"></label><button id="pv" class="pri">Enregistrer</button> <button id="pu">Annuler la dernière note</button> <button id="pd">Supprimer l’étudiant</button> <button id="po">Se déconnecter</button> <span class="ok" id="pr">${msg}</span></div>
 <div class="card"><h2>Étudiants inscrits</h2><input id="qs" placeholder="Rechercher par nom ou matricule…"><div class="w"><table id="qt"></table></div></div>
 <div class="card"><h2>Publier une annonce</h2><input id="at" placeholder="Texte de l’annonce"><button id="ap" class="pri">Publier</button></div>`;
       }
@@ -2124,7 +984,7 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
             ? l
                 .map(
                   (s) =>
-                    `<option value="${s.mat}">${esc(s.nom)}${s.gr ? " · " + gr2(s.gr) : ""} (${s.mat})</option>`,
+                    `<option value="${s.mat}">${esc(s.nom)}${s.gr ? " · " + s.gr : ""} (${s.mat})</option>`,
                 )
                 .join("")
             : "<option value=''>Aucun étudiant</option>";
@@ -2138,13 +998,13 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
           dr = () => {
             const v = q.value.toLowerCase();
             $("#qt").innerHTML =
-              "<tr><th>Matricule</th><th>Nom</th><th>Faculté</th><th>Statut</th><th>Moy.</th><th>Prés.</th><th>En ligne</th></tr>" +
+              "<tr><th>Matricule</th><th>Nom</th><th>Faculté</th><th>Statut</th><th>Moy.</th><th>Prés.</th></tr>" +
               db.students
                 .filter((x) => (x.nom + " " + x.mat).toLowerCase().includes(v))
                 .sort(by)
                 .map(
                   (x) =>
-                    `<tr><td>${x.mat}</td><td>${esc(x.nom)}</td><td>${FAC[x.fac].c}${x.gr ? " · " + gr2(x.gr) : ""}</td><td>${x.st === "bud" ? "Бюджет" : "Контракт"}</td><td>${f1(moy(x))}</td><td>${prs(x) == null ? "—" : Math.round(prs(x)) + " %"}</td><td>${online(x) ? '<span class="ok">● В сети</span>' : "○"}</td></tr>`,
+                    `<tr><td>${x.mat}</td><td>${esc(x.nom)}</td><td>${FAC[x.fac].c}${x.gr ? " · " + x.gr : ""}</td><td>${x.st === "bud" ? "Бюджет" : "Контракт"}</td><td>${f1(moy(x))}</td><td>${prs(x) == null ? "—" : Math.round(prs(x)) + " %"}</td></tr>`,
                 )
                 .join("");
           };
@@ -2170,15 +1030,6 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
             );
             s.p[m.n] = Math.round(55 + Math.random() * 45);
           });
-          s.ev = subj(f)
-            .slice(0, 4)
-            .map((m, j) => ({
-              t: Date.now() - (j + 1) * 129600000,
-              k: j % 2 ? "p" : "g",
-              m: m.n,
-              v: s.g[m.n][0],
-              by: "",
-            }));
         });
         save();
       }
@@ -2186,7 +1037,7 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
         let m = "",
           t = 0;
         do {
-          m = String(t < 500 ? 1000 + Math.floor(Math.random() * 9000) : 10000 + t - 500);
+          m = "ID" + (t < 500 ? 1000 + Math.floor(Math.random() * 9000) : 10000 + t - 500);
           t++;
         } while (db.students.some((x) => x.mat === m));
         const s = { mat: m, nom, fac, fil, an, gr: gr || "", st: st || "bud", g: {}, p: {} };
@@ -2210,7 +1061,7 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
         });
         on("#rg", () => {
           const nm = $("#rn").value.trim(),
-            mt = mnorm($("#rmt").value),
+            mt = $("#rmt").value.trim().toUpperCase(),
             f = $("#rf").value,
             fl = $("#rl").value,
             an = +$("#ra").value,
@@ -2241,8 +1092,8 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
             alert("Réinscription effectuée : " + old.mat);
             return;
           }
-          if (mt && !/^\d{4,6}$/.test(mt)) {
-            er("Format de matricule invalide : utilisez uniquement des chiffres, de 4 à 6 (exemple : 5654).");
+          if (mt && !/^ID\d{4,6}$/.test(mt)) {
+            er("Format de matricule invalide : utilisez ID suivi de 4 à 6 chiffres (exemple : ID5654).");
             return;
           }
           if (!nm) {
@@ -2268,7 +1119,7 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
           alert("Votre matricule : " + s.mat);
         });
         on("#lg", () => {
-          const v = mnorm($("#lm").value);
+          const v = $("#lm").value.trim().toUpperCase();
           if (db.students.some((x) => x.mat === v)) {
             cur = v;
             msg = "";
@@ -2276,195 +1127,7 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
           render();
         });
         on("#out", () => {
-          const s = db.students.find((x) => x.mat === cur);
-          if (s) {
-            s.on = false;
-            s.seen = Date.now();
-            save();
-          }
           cur = null;
-          sec = "ev";
-          lastBeat = 0;
-          render();
-        });
-        document.querySelectorAll(".sb button[data-sec]").forEach(
-          (b) =>
-            (b.onclick = () => {
-              sec = b.dataset.sec;
-              render();
-            }),
-        );
-        const us = $("#us");
-        if (us) {
-          us.value = uq;
-          us.oninput = () => {
-            uq = us.value;
-            if (sec !== "us") {
-              sec = "us";
-              render();
-              const u = $("#us");
-              u.focus();
-              u.setSelectionRange(uq.length, uq.length);
-            } else drawUsers();
-          };
-        }
-        if (view === "stu" && sec === "us") drawUsers();
-        on("#cp", () => {
-          cm--;
-          if (cm < 0) {
-            cm = 11;
-            cy--;
-          }
-          cdy = null;
-          render();
-        });
-        on("#cn", () => {
-          cm++;
-          if (cm > 11) {
-            cm = 0;
-            cy++;
-          }
-          cdy = null;
-          render();
-        });
-        on("#ct", () => {
-          const n = new Date();
-          cy = n.getFullYear();
-          cm = n.getMonth();
-          cdy = n.getDate();
-          render();
-        });
-        document.querySelectorAll("[data-cd]").forEach(
-          (b) =>
-            (b.onclick = () => {
-              cdy = +b.dataset.cd;
-              render();
-            }),
-        );
-        on("#tp", () => {
-          sec = "st";
-          render();
-        });
-        on("#ti", () => {
-          sec = "sp";
-          render();
-        });
-        on("#th", () =>
-          alert(
-            "Pour toute question, contactez la scolarité de votre faculté · По вопросам обращайтесь в деканат вашего факультета.",
-          ),
-        );
-        on("#pa", () => {
-          const s = db.students.find((x) => x.mat === cur);
-          if (!s) return;
-          const title = $("#pft").value.trim(),
-            m = $("#pfm"),
-            link = $("#pfl").value.trim();
-          if (!title) {
-            m.textContent = "Titre requis · Введите название";
-            return;
-          }
-          if (link && !/^https?:\/\//i.test(link)) {
-            m.textContent = "Le lien doit commencer par https:// · Ссылка должна начинаться с https://";
-            return;
-          }
-          const rec = {
-            cat: $("#pfc").value,
-            title,
-            d: $("#pfd").value || "",
-            desc: $("#pfx").value.trim(),
-            link,
-            st: "wait",
-          };
-          s.pf = s.pf || [];
-          if (pfe) {
-            const i = s.pf.findIndex((e) => String(e.t) === pfe);
-            if (i >= 0) s.pf[i] = Object.assign({}, rec, { t: s.pf[i].t });
-            pfe = null;
-          } else s.pf.push(Object.assign({}, rec, { t: Date.now() }));
-          save();
-          render();
-        });
-        on("#pq", () => {
-          pfe = null;
-          render();
-        });
-        document.querySelectorAll("[data-pd]").forEach(
-          (b) =>
-            (b.onclick = () => {
-              const s = db.students.find((x) => x.mat === cur);
-              if (s && confirm("Supprimer cette entrée ? · Удалить запись?")) {
-                s.pf = (s.pf || []).filter((e) => String(e.t) !== b.dataset.pd);
-                if (pfe === b.dataset.pd) pfe = null;
-                save();
-                render();
-              }
-            }),
-        );
-        document.querySelectorAll("[data-pe]").forEach(
-          (b) =>
-            (b.onclick = () => {
-              pfe = b.dataset.pe;
-              render();
-            }),
-        );
-        document.querySelectorAll("[data-pf]").forEach(
-          (b) =>
-            (b.onclick = () => {
-              pfc = b.dataset.pf;
-              render();
-            }),
-        );
-        on("#ms", () => {
-          const s = db.students.find((x) => x.mat === cur),
-            to = ($("#mt") || {}).value,
-            t = $("#mx").value.trim();
-          if (!s || !to || !t) return;
-          const n = Date.now(),
-            id = n + "-" + Math.random().toString(36).slice(2, 7);
-          if (to === "*prof") {
-            (s.msg = s.msg || []).push({ id, t: n, dir: "out", who: "Преподаватель", wm: "prof", x: t });
-          } else {
-            const r = db.students.find((x) => x.mat === to);
-            if (!r) return;
-            (r.msg = r.msg || []).push({ id, t: n, dir: "in", who: s.nom, wm: s.mat, x: t });
-            (s.msg = s.msg || []).push({ id, t: n, dir: "out", who: r.nom, wm: r.mat, x: t });
-          }
-          save();
-          sendLive({ id, t: n, to, nm: s.nom, wm: s.mat, x: t });
-          $("#mx").value = "";
-          drawThread();
-        });
-        on("#tms", () => {
-          const r = db.students.find((x) => x.mat === $("#tmt").value),
-            t = $("#tmx").value.trim();
-          if (!r || !t) return;
-          const n = Date.now(),
-            id = n + "-" + Math.random().toString(36).slice(2, 7),
-            nm = tName || "Преподаватель";
-          (r.msg = r.msg || []).push({ id, t: n, dir: "in", who: nm, wm: "prof", x: t });
-          save();
-          sendLive({ id, t: n, to: r.mat, nm, wm: "prof", x: t });
-          $("#tmx").value = "";
-          note("Envoyé · Отправлено");
-        });
-        const mt = $("#mt");
-        if (mt) {
-          if (cto && [...mt.options].some((o) => o.value === cto)) mt.value = cto;
-          mt.onchange = drawThread;
-          drawThread();
-        }
-        if (view === "prof" && tOK) {
-          drawOnline();
-          drawTIn();
-          drawPend();
-        }
-        on("#gs", () => {
-          view = "stu";
-          render();
-        });
-        on("#gp", () => {
-          view = "prof";
           render();
         });
         on("#pl", async () => {
@@ -2507,16 +1170,10 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
           const m = $("#pm").value,
             n = parseFloat($("#pn").value),
             p = parseInt($("#pp").value);
-          tName = $("#pt").value.trim();
-          const ev = (s.ev = s.ev || []);
           if (!isNaN(n) && n >= 0 && n <= 5) {
             (s.g[m] = s.g[m] || []).push(n);
-            ev.push({ t: Date.now(), k: "g", m, v: n, by: tName });
           }
-          if (!isNaN(p) && p >= 0 && p <= 100) {
-            s.p[m] = p;
-            ev.push({ t: Date.now(), k: "p", m, by: tName });
-          }
+          if (!isNaN(p) && p >= 0 && p <= 100) s.p[m] = p;
           save();
           msg = "Enregistré pour " + s.nom + ".";
           render();
@@ -2541,18 +1198,7 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
         fillFil();
         fillProf();
       }
-      function facs() {
-        if (tOK) return facsAll();
-        const s = db.students.find((x) => x.mat === cur);
-        if (s && FAC[s.fac]) {
-          const x = FAC[s.fac];
-          return `<div class="card"><h2>${x.ru}</h2><p class="mu">Направления : ${x.f.join(" · ")} · ${x.m.filter((q) => q[2] === "ex").length} экзамена · ${x.m.filter((q) => q[2] === "za").length} зачётов</p>${FT(s.fac)}</div>`;
-        }
-        return `<div class="card"><h2>Accès réservé · Доступ ограничен</h2><p class="mu">Le détail des facultés est visible après connexion : chaque étudiant voit sa propre faculté, les enseignants voient toutes les facultés.</p><button id="gs" class="pri">Espace étudiant</button> <button id="gp">Espace enseignant</button></div>`;
-      }
       function render() {
-        beat();
-        announce();
         nav();
         $("#app").innerHTML = { home, fac: facs, reg, stu, prof }[view]();
         bind();
@@ -2565,13 +1211,8 @@ ${l.length ? l.map((e) => `<div class="pfe"><div><span class="tag">${esc(pcl(e.c
         r.dataset.theme = dark ? "light" : "dark";
       };
       render();
-      if (window.claude && window.claude.use) startRoom();
       if (window.claude && window.claude.use)
         startSync().catch(() => stat("Données enregistrées sur cet appareil uniquement"));
-      setInterval(() => {
-        beat();
-        if (view === "stu" && sec === "us") drawUsers();
-      }, 30000);
     </script>
   </body>
 </html>
